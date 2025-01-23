@@ -8,3 +8,6 @@ run:
 
 stop:
 	docker stop $(shell docker ps -q --filter ancestor='onion_service')
+
+clean:
+	docker system prune
